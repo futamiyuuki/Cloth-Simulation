@@ -1,0 +1,85 @@
+balljoint root {
+	offset 0 0 0
+	boxmin -0.3 -0.18 -0.15
+	boxmax 0.3 0.18 0.15
+	pose 0 -0.5 0
+	balljoint head {
+		offset -0.3 0.2 0
+		boxmin -0.12 0 -0.12
+		boxmax 0.12 0.2 0.12
+		rotxlimit -0.3 0.3
+		rotylimit -1 1
+		rotzlimit -0.3 0.8
+		pose 0 0 0.7
+		balljoint snout {
+			offset -0.2 0.0 0
+			boxmin -0.06 0 -0.12
+			boxmax 0.06 0.1 0.12
+			rotxlimit 0 0
+			rotylimit 0 0
+			rotzlimit 0 0
+		}
+		balljoint ear_l {
+			offset 0.1 0.2 -0.12
+			boxmin -0.06 0 -0.06
+			boxmax 0.06 0.1 0.06
+			rotxlimit 0 0
+			rotylimit -0.3 0.3
+			rotzlimit 0 0
+			pose 0 -0.3 0
+		}
+		balljoint ear_r {
+			offset 0.1 0.2 0.12
+			boxmin -0.06 0 -0.06
+			boxmax 0.06 0.1 0.06
+			rotxlimit 0 0
+			rotylimit -0.3 0.3
+			rotzlimit 0 0
+			pose 0 -0.3 0
+		}
+	}
+	balljoint leg_front_l {
+		offset -0.25 -0.1 -0.2
+		boxmin -0.05 -0.3 -0.05
+		boxmax 0.05 0.0 0.05
+		rotxlimit -0.4 0.5
+		rotylimit -0.6 1.0
+		rotzlimit -0.8 0.7
+		pose 0.0 0.0 -0.8
+	}
+	balljoint leg_front_r {
+		offset -0.25 -0.1 0.2
+		boxmin -0.05 -0.3 -0.05
+		boxmax 0.05 0.0 0.05
+		rotxlimit -0.4 0.5
+		rotylimit -0.6 1.0
+		rotzlimit -0.8 0.7
+	}
+	balljoint leg_back_l {
+		offset 0.15 -0.1 -0.2
+		boxmin -0.05 -0.3 -0.05
+		boxmax 0.05 0.0 0.05
+		rotxlimit -0.4 0.5
+		rotylimit -0.6 1.0
+		rotzlimit -0.8 0.7
+		pose 0.0 0.0 0.10
+	}
+	balljoint leg_back_r {
+		offset 0.15 -0.1 0.2
+		boxmin -0.05 -0.3 -0.05
+		boxmax 0.05 0.0 0.05
+		rotxlimit -0.4 0.5
+		rotylimit -0.6 1.0
+		rotzlimit -0.8 0.7
+		pose 0.0 0.0 -0.15
+	}
+	balljoint tail {
+		offset 0.35 0.15 0.0
+		boxmin -0.05 -0.3 -0.05
+		boxmax 0.05 0.0 0.05
+		rotxlimit -1.0 1.0
+		rotylimit -0.6 1.0
+		rotzlimit -0.0 2.0
+		pose 0.55 0.65 0.65
+	}
+}
